@@ -613,3 +613,11 @@ python3 test_input.py
   follow symlinks, so a symlink inside the safe folder pointing outside
   would not be caught. A production version would resolve symlinks too
   (for example with `os.path.realpath`).
+
+
+## Further practice
+
+- Try an email like `user<script>@example.com` and one like `user@bad domain`. Both should be rejected, for different reasons.
+- Try the filename `../../etc/passwd` and the filename `.env`. Both should be rejected.
+- Change the seed in the `random` demo to another number and run it twice. The sequence changes, but it is still predictable once the seed is known.
+- Generate 10 reset tokens and check that no two are the same.
